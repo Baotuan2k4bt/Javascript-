@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     const diemKiemTra = parseFloat(prompt("Nhập điểm bài kiểm tra:"));
+     const diemGiuaKy = parseFloat(prompt("Nhập điểm thi giữa kỳ:"));
+     const diemCuoiKy = parseFloat(prompt("Nhập điểm thi cuối kỳ:"));
+      const diemtrungbinh=( diemKiemTra+diemGiuaKy+diemCuoiKy) /  3 ;
+      let xephang;
+      if( diemtrungbinh>=8.5 ){
+          xephang="xếp hạng suất sắc ";
+      } else if (diemtrungbinh>=7){
+          xephang="xếp hạng giỏi" ;
+      } else if( diemtrungbinh>=5.5){
+          xephang=" xếp hạng trung bình";
+      } else{
+          xephang=" xếp hạng yếu ";
+      }
+     document.write(" điểm trung bình :"+diemtrungbinh.toFixed(2));
+     document.write(""+xephang);
+
+ </script>
+</body>
+</html>

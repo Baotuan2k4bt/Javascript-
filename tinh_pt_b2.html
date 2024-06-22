@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt(" nhập số a :"));
+    let b=parseInt(prompt(" nhập số b: "));
+    let c=parseInt(prompt(" nhập số c "));
+ if(a===0){
+     if(b===0){
+         if(c===0){
+             document.write(" phương trình vô số nghiệm ");
+         } else {
+             document.write(" phương trình vô nghiệm ")
+         }
+     } else {
+         document.write(" phương trình có nghiệm x="+(-c/b));
+     }
+ } else {
+     denta=b*b-4*a*c;
+     if(denta<0){
+         document.write(" phương trình vô nghiệm");
+     }else if(denta===0){
+         x = -b/(2*a)
+         document.write('Nghiem phuong trinh x1 = x2 = ' + x);
+     } else {
+         x1 = (-b + Math.sqrt(denta))/(2*a)
+         x2 = (-b - Math.sqrt(denta))/(2*a)
+         document.write(`Nghiem x1 = ${x1}, x2 = ${x2}`);
+     }
+
+
+ }
+
+
+  </script>
+</body>
+</html>

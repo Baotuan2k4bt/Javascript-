@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let a=parseInt(prompt(" nhập vào cạnh a"));
+     let b=parseInt(prompt(" nhập vào cạnh b"));
+     let c=parseInt(prompt (" nhập vào cạnh c"));
+     if( a<b+c && b<a+c && c<a+b ) {
+         if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == b * b + a * a) {
+             document.write(" đây là tam giác vuông  ");
+         } else if (a == b && b == c) {
+             document.write(" đây là tam giác đều")
+         } else if (a == b || a == c || b == c) {
+             document.write(" đây là tam giác cân");
+         } else if (a * a > b * b + c * c || b * b > a * a + c * c || c * c > a * a + b * b) {
+             document.write("đây là tam giác tù")
+         } else {
+              document.write(" đây là tam giác nhọn")
+         }
+     }
+</script>
+</body>
+</html>
